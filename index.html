@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title></title>
+	<script src="jquery-2.1.4.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="show()">
+	<div id="background"></div>
+	<div class="block" id="info">
+		<div id="infotext">
+			<div id="topic"><p>Bombings in Iraq, <br>Syrian Refugees</p></div>
+			<div id="topic"><p>Moderated Caucus</p></div>
+			<div id="commitee"></div>
+		</div>
+		<div id="logo"><img id="logo" src="img/who.png"/></div>
+	</div>
+
+	
+	<div id="speakers" class="block">
+		<p class="title">Speakers List<p>
+			<hr>
+		<ul style="height:40%" id="speakerslist"></ul>
+		<button onclick="buttonRemove()"id="selectbutton">Remove From Speakers List</button>		
+	</div>
+
+	<div id="committeemembers" class="block">
+		<p class="title" >Comittee Members<p>
+			<hr>
+		<ul style="height:40%" id="commiteelist">
+			<div onclick="select('#test')">
+				<li onclick="select('#test')" id="test" class="member">Canada</li>
+			</div>
+			<div onclick="select('#test2')">
+				<li onclick="select('#test2')" id="test2" class="member">United States</li>
+			</div>
+			<div onclick="select('#test3')">
+				<li onclick="select('#test3')" id="test3" class="member">Aurasia</li>
+			</div>
+			<div onclick="select('#test4')">
+				<li onclick="select('#test4')" id="test4" class="member">Asia</li>
+			</div>
+			<div onclick="select('#test5')">
+				<li onclick="select('#test5')" id="test5" class="member">Russia</li>
+			</div>
+			<div onclick="select('#test6')">
+				<li onclick="select('#test6')" id="test6" class="member">France</li>
+			</div>
+			<div onclick="select('#test7')">
+				<li onclick="select('#test7')" id="test7" class="member">Spain</li>
+			</div>
+		</ul>
+		<button onclick="buttonSelect()"id="selectbutton">Add to Speakers List</button>
+	</div>
+
+
+	<div id="resolutions" class="block"><p class="title">Resolution</p><hr><textarea id="textbox" rows="4" cols="50"></textarea></div><div>
+	<div id="timer" class="block">
+		<div>Time: <span id="time"></span></div>
+		<input type="button" id="startbutton" value="start" onclick="start();">
+		<input type="button" id="stopbutton" value="stop" onclick="stop();">
+		<input type="button" value="reset" id="resetbutton" onclick="reset()">
+	</div>
+</body>
+</html>
+
+

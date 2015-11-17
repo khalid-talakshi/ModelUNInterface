@@ -1,0 +1,115 @@
+.block {
+	border: 2px solid;
+	border-radius:20px;
+	overflow:hidden;
+}
+#info {
+	position:absolute;
+	height:25%;
+	width:47.5%;
+}
+#selectbutton{
+	position:absolute;
+	width:100%;
+	height:30%;
+	bottom:0;
+}
+
+#committeemembers {
+	position:absolute;
+	width:47.5%;
+	height:38.5%;
+	top:60%;
+}
+ul {
+    list-style-type: none;
+    overflow:hidden; 
+    overflow-y:scroll;
+
+}
+.title {
+	text-align:center;
+
+}
+li {
+    list-style-type: none;
+}
+#speakers {
+	position:absolute;
+	width:47.5%;
+	top:28%;
+	height:30%;
+}
+#resolutions{
+	top:1.5%;
+	width:49%;
+	left:50%;
+	height:74%;
+	position:absolute;
+}
+#textbox {
+
+	position:relative;
+	width:100%;
+	height:100%;
+}
+textarea{
+	font-size:18px;
+}
+#timer{
+	top:77.5%;
+	width:49%;
+	left:50%;
+	height:21%;
+	position:absolute;
+}
+#background{
+	position:absolute;
+	font-size:20px;
+	height:100%;
+	width:100%;
+	z-index:-2;
+	background-color:white;
+}
+#logo{
+	position:absolute;
+	top:0%;
+	height:100%;
+	z-index:-1;
+}
+h2 {
+	text-align:center;
+
+}
+#topic {
+	position:relative;
+	left:50%;
+	width:50%;
+	z-index:-1;
+}
+#startbutton {
+	position:absolute;
+	width:100%;
+	height:30%;
+	bottom:38%;
+	left:0;
+}
+#stopbutton {
+position:absolute;
+	width:100%;
+	height:30%;
+	bottom:20%;
+	left:0;
+}
+#resetbutton {
+position:absolute;
+	width:100%;
+	height:30%;
+	bottom:0%;
+	left:0;
+}
+
+#timer{
+	font-size:5vw;
+	text-align:center;
+}
