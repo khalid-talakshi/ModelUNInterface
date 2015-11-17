@@ -3,9 +3,12 @@
 	<title></title>
 	<script src="jquery-2.1.4.min.js"></script>
 	<script src="script.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body onload="show()">
+	
 	<div id="background"></div>
 	<div class="block" id="info">
 		<div id="infotext">
@@ -19,15 +22,15 @@
 	
 	<div id="speakers" class="block">
 		<p class="title">Speakers List<p>
-			<hr>
-		<ul style="height:40%" id="speakerslist"></ul>
+		<hr>
+		<div style="height:45%;width:100%" id="speakerslist"></div>
 		<button onclick="buttonRemove()"id="selectbutton">Remove From Speakers List</button>		
 	</div>
 
 	<div id="committeemembers" class="block">
 		<p class="title" >Comittee Members<p>
 			<hr>
-		<ul style="height:40%" id="commiteelist">
+		<div style="height:50%;width:100%" id="commiteelist">
 			<div onclick="select('#test')">
 				<li onclick="select('#test')" id="test" class="member">Canada</li>
 			</div>
@@ -49,12 +52,12 @@
 			<div onclick="select('#test7')">
 				<li onclick="select('#test7')" id="test7" class="member">Spain</li>
 			</div>
-		</ul>
+		</div>
 		<button onclick="buttonSelect()"id="selectbutton">Add to Speakers List</button>
 	</div>
 
 
-	<div id="resolutions" class="block"><p class="title">Resolution</p><hr><textarea id="textbox" rows="4" cols="50"></textarea></div><div>
+	<div id="resolutions" class="block"><p class="title">Resolution</p><hr><textarea id="textbox" rows="4" cols="50">Type resolutions here</textarea></div><div>
 	<div id="timer" class="block">
 		<div>Time: <span id="time"></span></div>
 		<input type="button" id="startbutton" value="start" onclick="start();">

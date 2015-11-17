@@ -15,17 +15,6 @@ function buttonRemove(){
 	$(".member").css("background-color", "white");
 }
 
-
-
-
-
-
-
-
-
-
-
-
 var	clsStopwatch = function() {
 		var	startAt	= 0;	
 		var	lapTime	= 0;	

@@ -1,7 +1,12 @@
+body {
+	background-color:#000080;
+	font-family:'Montserrat',serif;
+}
 .block {
-	border: 2px solid;
+	border: 1.5px solid;
 	border-radius:20px;
 	overflow:hidden;
+	background-color:white;
 }
 #info {
 	position:absolute;
@@ -40,11 +45,17 @@ li {
 	top:28%;
 	height:30%;
 }
+#speakerslist{
+	position:absolute;
+	top:28%;
+	overflow-y: scroll;
+
+}
 #resolutions{
-	top:1.5%;
+	top:1%;
 	width:49%;
 	left:50%;
-	height:74%;
+	height:75%;
 	position:absolute;
 }
 #textbox {
@@ -55,6 +66,13 @@ li {
 }
 textarea{
 	font-size:18px;
+	border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 #timer{
 	top:77.5%;
@@ -63,19 +81,12 @@ textarea{
 	height:21%;
 	position:absolute;
 }
-#background{
-	position:absolute;
-	font-size:20px;
-	height:100%;
-	width:100%;
-	z-index:-2;
-	background-color:white;
-}
+
 #logo{
 	position:absolute;
 	top:0%;
 	height:100%;
-	z-index:-1;
+
 }
 h2 {
 	text-align:center;
@@ -85,7 +96,12 @@ h2 {
 	position:relative;
 	left:50%;
 	width:50%;
-	z-index:-1;
+
+}
+#commiteelist {
+	position:absolute;
+	top:22%;
+	overflow-y: scroll
 }
 #startbutton {
 	position:absolute;
