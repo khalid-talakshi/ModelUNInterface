@@ -1,8 +1,14 @@
+var speakingTime = 30;
 var element = "";
 function select(elemid){
 	$(".member").css("background-color", "white");
     $(elemid).css("background-color", "blue");
 	element = $(elemid);
+}
+
+function changeSpeakingTime(){
+	var myTime = prompt("Speaking Time:", speakingTime);
+	speakingTime = myTime;
 }
 
 function buttonSelect(){
@@ -13,6 +19,27 @@ function buttonSelect(){
 function buttonRemove(){
 	$("#commiteelist").append(element);
 	$(".member").css("background-color", "white");
+}
+
+function speak(){
+	reset();
+	start();
+	checkTime();
+}
+
+function checkTime(){
+	var timerId = setTimeout(function () {    //  call a 3s setTimeout when the loop is called
+      var mySeconds = Math.floor(x.time() / 1000 );                     //  increment the counter
+      if (mySeconds<speakingTime) {            //  if the counter < 10, call the loop function
+         checkTime();             //  ..  again which will trigger another 
+      }else{
+      	stop();
+      	alert("Times Up");  
+      	reset(); 
+      	clearInterval(timerId); 
+      }              //  ..  setTimeout()
+   	}, 200)
+
 }
 
 var	clsStopwatch = function() {

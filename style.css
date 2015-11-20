@@ -15,10 +15,33 @@ body {
 }
 #selectbutton{
 	position:absolute;
+	width:33.33333%;
+	height:30%;
+	bottom:0;
+}
+#addButton{
+	position:absolute;
 	width:100%;
 	height:30%;
 	bottom:0;
 }
+
+#speakButton{
+	position:absolute;
+	width:33.33333%;
+	height:30%;
+	left:33.33333%;
+	bottom:0;
+
+}
+#setSpeakingTime{
+	position:absolute;
+	width:33.33333%;
+	left:66.66666%;
+	height:30%;
+	bottom:0;
+}
+
 
 #committeemembers {
 	position:absolute;
@@ -30,14 +53,25 @@ ul {
     list-style-type: none;
     overflow:hidden; 
     overflow-y:scroll;
+}
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url(montserrat.ttf);
+}
+
+}
+#infotext{
+	position:absolute;
 }
 .title {
 	text-align:center;
-
+	vertical-align:center;
+	font-size:2vw;
 }
 li {
     list-style-type: none;
+    font-size:2vw;
 }
 #speakers {
 	position:absolute;
@@ -65,7 +99,7 @@ li {
 	height:100%;
 }
 textarea{
-	font-size:18px;
+	font-size:2vw;
 	border: none;
     overflow: auto;
     outline: none;
@@ -92,11 +126,11 @@ h2 {
 	text-align:center;
 
 }
-#topic {
+.topic {
 	position:relative;
-	left:50%;
+	left:27vh;
 	width:50%;
-
+	font-size:2vw;
 }
 #commiteelist {
 	position:absolute;
@@ -124,8 +158,14 @@ position:absolute;
 	bottom:0%;
 	left:0;
 }
-
+#timerholder{
+	position:relative;
+	text-align:center;
+	margin-top:1%;
+}
 #timer{
-	font-size:5vw;
+
+	font-family:monospace;
+	font-size:6vw;
 	text-align:center;
 }
