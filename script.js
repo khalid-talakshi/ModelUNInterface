@@ -1,18 +1,31 @@
 
 var commCounter = 0;
+
 function setup(){
 	commCounter++;
 	if (commCounter == 1) {
+		var myElements = document.querySelectorAll(".topic");
+		for (var i = 0; i < myElements.length; i++) {
+    		myElements[i].style.top = "9%";
+		}
 		var imageURL = "img/sc.jpg";
 		var commName = "United Nations Security Council";
 		var nations = ["China","France","Russian Federation","United Kingdom","United States","Angola","Chad","Chile","Jordan","Lithuania"];
 		document.getElementById("commTopic").innerHTML = "Conflict in Syria";
 	} else if (commCounter == 2){
+		var myElements = document.querySelectorAll(".topic");
+		for (var i = 0; i < myElements.length; i++) {
+    		myElements[i].style.top = "9%";
+		}
 		var imageURL = "img/unhcr.png";
 		var commName = "UN High Commision for Refugees";
 		var nations = ["Portugal","United States","Netherlands","Japan","Norway","Switzerland","Denmark","Iran"];
 		document.getElementById("commTopic").innerHTML = "Migrants into Europe";
 	} else if (commCounter == 3){
+		var myElements = document.querySelectorAll(".topic");
+		for (var i = 0; i < myElements.length; i++) {
+    		myElements[i].style.top = "9%";
+		}
 		var imageURL = "img/who.jpg";
 		var commName = "World Health Organization";
 		var nations = ["China","France","Russian Federation","United Kingdom","United States","Angola","Chad","Chile","Jordan","Lithuania"];
@@ -20,6 +33,10 @@ function setup(){
 	} else {
 		var imageURL = "img/maze.jpg";
 		commCounter = 0;
+		var myElements = document.querySelectorAll(".topic");
+		for (var i = 0; i < myElements.length; i++) {
+    		myElements[i].style.top = "0%";
+		}
 		var commName = "<br>Stuck in The Maze";
 		var nations = ["Thomas","Newt","Minho","Gally","Chuck","Alby","Teresa","Ben","Frypan","Zart"];
 		document.getElementById("commTopic").innerHTML = "Crisis Committee<br>";
