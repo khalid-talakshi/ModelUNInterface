@@ -1,47 +1,81 @@
 body {
-	background-color:#000080;
-	font-family:'Montserrat',serif;
+	background-color:none;
+	font-family:'Helvetica Neue',serif;
+	color:white;
 }
 .block {
 	border: 1.5px solid;
 	border-radius:20px;
+	border-color:black;
 	overflow:hidden;
-	background-color:white;
+	background: rgba(25, 25, 25, .7); 
+	opacity:50%;
+}
+#background {
+	top:-1%;
+	left:-1%;
+	height:101%;
+	width:101%;
+	position:absolute;
+	pointer-events: none;
+}
+#line{
+	margin-top:3%;
+}
+:-webkit-full-screen {
+
+	width: 98.5%;
+
+}
+
+.clickbutton{
+	color:white;
+	background: rgba(25, 25, 25, .65); 
+	font-size:2.4vh;
+	border-color:none;
+	border-left:none;
+	border-right:1.5px solid grey;
+	box-shadow:none;
+	border-top: 1.5px solid;
+	border-bottom:none;
+}
+.clickbutton:hover{
+	background: rgba(25, 25, 25, .3); 
 }
 #info {
 	position:absolute;
 	height:25%;
 	width:47.5%;
 }
-#selectbutton{
-	position:absolute;
-	width:33.33333%;
-	height:30%;
-	bottom:0;
-}
+
 #addButton{
 	position:absolute;
-	width:100%;
-	height:23%;
+	width:100.5%;
+	height:20%;
 	bottom:0;
 }
 
 #speakButton{
 	position:absolute;
 	width:33.33333%;
-	height:30%;
+	height:23%;
 	left:33.33333%;
 	bottom:0;
 
 }
 #setSpeakingTime{
 	position:absolute;
-	width:33.33333%;
+	width:34%;
 	left:66.66666%;
-	height:30%;
+	height:23%;
 	bottom:0;
 }
-
+#selectbutton{
+	position:absolute;
+	width:33.33333%;
+	height:23%;
+	bottom:0;
+}
 
 #committeemembers {
 	position:absolute;
@@ -60,34 +94,36 @@ ul {
     src: url(montserrat.ttf);
 }
 
-}
-#infotext{
-	position:absolute;
-}
 .title {
+
 	text-align:center;
 	vertical-align:center;
-	font-size:2vw;
+	font-size:2.5vh;
 	-moz-user-select: -moz-none;
    -khtml-user-select: none;
    -webkit-user-select: none;
 }
 li {
     list-style-type: none;
-    font-size:2vw;
+    font-size:3vh;
+    text-align:center;
+}
+.member:hover{
+	background: rgba(25, 25, 25, .65);
 }
 #speakers {
 	position:absolute;
 	width:47.5%;
-	top:28%;
-	height:30%;
+	top:27.5%;
+	height:31%;
 }
 
 #speakerslist{
 	position:absolute;
-	top:32%;
+	top:28%;
 	overflow-y: scroll;
-
+	height:48%;
+	width:100%;
 }
 #resolutions{
 	top:1%;
@@ -103,11 +139,12 @@ li {
 	height:100%;
 }
 textarea{
-	font-size:2vw;
+	font-size:2.5vh;
 	border: none;
     overflow: auto;
     outline: none;
-
+    color:white;
+    background: rgba(25, 25, 25,0); 
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -131,11 +168,12 @@ h2 {
 
 }
 .topic {
-	top:9%;
+	text-align: center;
+	top:4%;
 	position:relative;
-	left:26vh;
-	width:53%;
-	font-size:2.4vw;
+	left:30vh;
+	width:30vh;
+	font-size:3vh;
 	user-select: none;
 	-moz-user-select: -moz-none;
    -khtml-user-select: none;
@@ -143,39 +181,49 @@ h2 {
 }
 #commiteelist {
 	position:absolute;
-	top:25%;
-	overflow-y: scroll
+	top:21.5%;
+	overflow-y: scroll;
+	height:58%;
+	width:100%
 }
+
+#fullscreen{
+	position:absolute;
+	height:7%;
+	left:93%;
+	z-index:4;
+}
+
 #startbutton {
 	position:absolute;
-	width:100%;
-	height:30%;
-	bottom:38%;
+	width:33.33333%;
+	height:37%;
+	bottom:0%;
 	left:0;
 }
 #stopbutton {
-position:absolute;
-	width:100%;
-	height:30%;
-	bottom:20%;
-	left:0;
+	position:absolute;
+	width:33.33333%;
+	height:37%;
+	bottom:0%;
+	left:33.33333%;
 }
 #resetbutton {
 position:absolute;
-	width:100%;
-	height:30%;
+	width:34%;
+	height:37%;
 	bottom:0%;
-	left:0;
+	left:66.66666%;
 }
 #timerholder{
 	position:relative;
 	text-align:center;
-	margin-top:1%;
+	margin-top:0%;
 }
 #timer{
 
-	font-family:monospace;
-	font-size:6vw;
+	font-family:'Helvetica Neue';
+	font-size:10.5vh;
 	text-align:center;
 	-moz-user-select: -moz-none;
    -khtml-user-select: none;

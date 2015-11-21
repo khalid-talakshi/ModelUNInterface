@@ -9,11 +9,11 @@
 </head>
 <body onload="show();setup()">
 	
-	<div id="background"></div>
+	<img id="background" src="img/un.jpg"/>
 	<div class="block" id="info">
 		
 		<div class="topic" id="commTitle" onClick="setup()"></div>
-		<br>
+		<hr id="line">
 		<div class="topic" id="commTopic" onClick="changeTopic()"></div>
 		<div class="topic" ><p id="caucus" onclick="changeCaucus()">Speakers List</p></div>
 		<div id="logoholder"><img id="logo" src="" onClick="setup()"/></div>
@@ -23,16 +23,16 @@
 	<div id="speakers" class="block">
 		<p class="title">Speakers List<p>
 		<hr>
-		<div style="height:45%;width:100%" id="speakerslist"></div>
-		<button onclick="buttonRemove()"id="selectbutton">Remove From Speakers List</button>
-		<button id="speakButton" onClick="speak()">Speak</button>
-		<button id="setSpeakingTime" onClick="changeSpeakingTime()">Set Speaking Time</button>		
+		<div id="speakerslist"></div>
+		<button onclick="buttonRemove()"id="selectbutton" class="clickbutton">Remove From Speakers List</button>
+		<button id="speakButton" onClick="speak()" class="clickbutton">Speak</button>
+		<button id="setSpeakingTime" onClick="changeSpeakingTime()" class="clickbutton">Set Speaking Time</button>		
 	</div>
 
 	<div id="committeemembers" class="block">
 		<p class="title" >Comittee Members<p>
 			<hr>
-		<div style="height:50%;width:100%" id="commiteelist">
+		<div id="commiteelist">
 			<div onclick="select('#test1')">
 				<li onclick="select('#test1')" id="test1" class="member"></li>
 			</div>
@@ -79,17 +79,18 @@
 				<li onclick="select('#test15')" id="test15" class="member"></li>
 			</div>
 		</div>
-		<button onclick="buttonSelect()"id="addButton">Add to Speakers List</button>
+		<button onclick="buttonSelect()"id="addButton" class="clickbutton" >Add to Speakers List</button>
 	</div>
 
-
+	<img onClick="fullscreen()" id="fullscreen" src="img/fullscreen.png"/>
 	<div id="resolutions" class="block"><p class="title">Resolution</p><hr><textarea id="textbox" rows="4" cols="50">Type resolutions here</textarea></div><div>
 	<div id="timer" class="block">
 		<div id="timerholder"><span id="time"></span></div>
-		<input type="button" id="startbutton" value="start" onclick="start();">
-		<input type="button" id="stopbutton" value="stop" onclick="stop();">
-		<input type="button" value="reset" id="resetbutton" onclick="reset()">
+		<input type="button" id="startbutton" class="clickbutton" value="Start" onclick="start();">
+		<input type="button" id="stopbutton" class="clickbutton" value="Stop" onclick="stop();">
+		<input type="button" value="Reset" class="clickbutton" id="resetbutton" onclick="reset()">
 	</div>
+	
 </body>
 </html>
 

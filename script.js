@@ -6,7 +6,7 @@ function setup(){
 	if (commCounter == 1) {
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
-    		myElements[i].style.top = "9%";
+    		myElements[i].style.top = "4.2%";
 		}
 		var imageURL = "img/sc.jpg";
 		var commName = "United Nations Security Council";
@@ -15,16 +15,16 @@ function setup(){
 	} else if (commCounter == 2){
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
-    		myElements[i].style.top = "9%";
+    		myElements[i].style.top = "4.2%";
 		}
 		var imageURL = "img/unhcr.png";
 		var commName = "UN High Commision for Refugees";
 		var nations = ["Portugal","United States","Netherlands","Japan","Norway","Switzerland","Denmark","Iran"];
-		document.getElementById("commTopic").innerHTML = "Migrants into Europe";
+		document.getElementById("commTopic").innerHTML = "Migrants in Europe";
 	} else if (commCounter == 3){
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
-    		myElements[i].style.top = "9%";
+    		myElements[i].style.top = "4.2%";
 		}
 		var imageURL = "img/who.jpg";
 		var commName = "World Health Organization";
@@ -35,9 +35,10 @@ function setup(){
 		commCounter = 0;
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
-    		myElements[i].style.top = "0%";
+    		myElements[i].style.top = "6%";
 		}
-		var commName = "<br>Stuck in The Maze";
+
+		var commName = "Stuck in The Maze";
 		var nations = ["Thomas","Newt","Minho","Gally","Chuck","Alby","Teresa","Ben","Frypan","Zart"];
 		document.getElementById("commTopic").innerHTML = "Crisis Committee<br>";
 	}
@@ -49,7 +50,7 @@ function setup(){
 }
 var caucusCount = 1;
 function changeCaucus(){
-	var caucuses = ["Speakers List","Moderated Caucus","Unmoderated Caucus"];
+	var caucuses = ["Speakers List","Moderated Caucus","Unmoderated"];
 	document.getElementById("caucus").innerHTML = caucuses[caucusCount];
 	
 	caucusCount++;
@@ -72,10 +73,12 @@ function changeTopic(){
 var speakingTime = 30;
 var element = "";
 function select(elemid){
-	$(".member").css("background-color", "white");
+	$(".member").css("background", "rgba(54, 25, 25, 0)");
     $(elemid).css("background-color", "blue");
 	element = $(elemid);
 }
+
+
 
 
 
@@ -87,11 +90,11 @@ function changeSpeakingTime(){
 function buttonSelect(){
 
 	$("#speakerslist").append(element);
-	$(".member").css("background-color", "white");
+	$(".member").css("background", "rgba(54, 25, 25, 0)");
 }
 function buttonRemove(){
 	$("#commiteelist").append(element);
-	$(".member").css("background-color", "white");
+	$(".member").css("background", "rgba(54, 25, 25, 0)");
 }
 
 function speak(){
@@ -143,6 +146,39 @@ var clocktimer;
 function pad(num, size) {
 	var s = "0000" + num;
 	return s.substr(s.length - size);
+}
+
+var full = false;
+
+function fullscreen(){
+	
+		var i = document.body;
+
+		// go full-screen
+		if(!full){
+			if (i.requestFullscreen) {
+				i.requestFullscreen();
+			} else if (i.webkitRequestFullscreen) {
+				i.webkitRequestFullscreen();
+			} else if (i.mozRequestFullScreen) {
+				i.mozRequestFullScreen();
+			} else if (i.msRequestFullscreen) {
+				i.msRequestFullscreen();
+			}
+			full = true;
+		} else {
+
+			if (document.exitFullscreen) {
+				document.exitFullscreen();
+			} else if (document.webkitExitFullscreen) {
+				document.webkitExitFullscreen();
+			} else if (document.mozCancelFullScreen) {
+				document.mozCancelFullScreen();
+			}	 else if (document.msExitFullscreen) {
+				document.msExitFullscreen();
+			}
+			full = false;	
+		}
 }
 
 function formatTime(time) {
