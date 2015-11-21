@@ -7,16 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body onload="show()">
+<body onload="show();setup()">
 	
 	<div id="background"></div>
 	<div class="block" id="info">
 		<div id="infotext">
-			<div class="topic"><p>Bombings in Iraq, <br>Syrian Refugees</p></div>
-			<div class="topic"><p>Moderated Caucus</p></div>
+			<div class="topic" id="commTitle" onClick="setup()"></div>
+			<div class="topic" ><p id="caucus" onclick="changeCaucus()">Speakers List</p></div>
 			<div id="commitee"></div>
 		</div>
-		<div id="logo"><img id="logo" src="img/who.png"/></div>
+		<div id="logoholder"><img id="logo" src="" onClick="setup()"/></div>
 	</div>
 
 	
@@ -33,26 +33,50 @@
 		<p class="title" >Comittee Members<p>
 			<hr>
 		<div style="height:50%;width:100%" id="commiteelist">
-			<div onclick="select('#test')">
-				<li onclick="select('#test')" id="test" class="member">Canada</li>
+			<div onclick="select('#test1')">
+				<li onclick="select('#test1')" id="test1" class="member"></li>
 			</div>
 			<div onclick="select('#test2')">
-				<li onclick="select('#test2')" id="test2" class="member">United States</li>
+				<li onclick="select('#test2')" id="test2" class="member"></li>
 			</div>
 			<div onclick="select('#test3')">
-				<li onclick="select('#test3')" id="test3" class="member">Aurasia</li>
+				<li onclick="select('#test3')" id="test3" class="member"></li>
 			</div>
 			<div onclick="select('#test4')">
-				<li onclick="select('#test4')" id="test4" class="member">Asia</li>
+				<li onclick="select('#test4')" id="test4" class="member"></li>
 			</div>
 			<div onclick="select('#test5')">
-				<li onclick="select('#test5')" id="test5" class="member">Russia</li>
+				<li onclick="select('#test5')" id="test5" class="member"></li>
 			</div>
 			<div onclick="select('#test6')">
-				<li onclick="select('#test6')" id="test6" class="member">France</li>
+				<li onclick="select('#test6')" id="test6" class="member"></li>
 			</div>
 			<div onclick="select('#test7')">
-				<li onclick="select('#test7')" id="test7" class="member">Spain</li>
+				<li onclick="select('#test7')" id="test7" class="member"></li>
+			</div>
+			<div onclick="select('#test8')">
+				<li onclick="select('#test8')" id="test8" class="member"></li>
+			</div>
+			<div onclick="select('#test9')">
+				<li onclick="select('#test9')" id="test9" class="member"></li>
+			</div>
+			<div onclick="select('#test10')">
+				<li onclick="select('#test10')" id="test10" class="member"></li>
+			</div>
+			<div onclick="select('#test11')">
+				<li onclick="select('#test11')" id="test11" class="member"></li>
+			</div>
+			<div onclick="select('#test12')">
+				<li onclick="select('#test12')" id="test12" class="member"></li>
+			</div>
+			<div onclick="select('#test13')">
+				<li onclick="select('#test13')" id="test13" class="member"></li>
+			</div>
+			<div onclick="select('#test14')">
+				<li onclick="select('#test14')" id="test14" class="member"></li>
+			</div>
+			<div onclick="select('#test15')">
+				<li onclick="select('#test15')" id="test15" class="member"></li>
 			</div>
 		</div>
 		<button onclick="buttonSelect()"id="addButton">Add to Speakers List</button>
