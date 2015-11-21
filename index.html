@@ -7,15 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body onload="show();setup()">
+<body onload="show();setup();window.resizeTo(890,700)">
 	
 	<img id="background" src="img/un.jpg"/>
 	<div class="block" id="info">
-		
-		<div class="topic" id="commTitle" onClick="setup()"></div>
-		<hr id="line">
-		<div class="topic" id="commTopic" onClick="changeTopic()"></div>
-		<div class="topic" ><p id="caucus" onclick="changeCaucus()">Speakers List</p></div>
+		<div id="infotext">
+			<div class="topic" id="commTitle" onClick="setup()"></div>
+			<hr id="line">
+			<div class="topic" id="commTopic" onClick="changeTopic()"></div>
+			<div class="topic" ><p id="caucus" onclick="changeCaucus()">Speakers List</p></div>
+		</div>
 		<div id="logoholder"><img id="logo" src="" onClick="setup()"/></div>
 	</div>
 

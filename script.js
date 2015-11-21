@@ -103,6 +103,10 @@ function speak(){
 	checkTime();
 }
 
+
+
+
+
 function checkTime(){
 	var timerId = setTimeout(function () {    //  call a 3s setTimeout when the loop is called
       var mySeconds = Math.floor(x.time() / 1000 );                     //  increment the counter
@@ -147,6 +151,7 @@ function pad(num, size) {
 	var s = "0000" + num;
 	return s.substr(s.length - size);
 }
+
 
 var full = false;
 
