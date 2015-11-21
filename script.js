@@ -6,19 +6,23 @@ function setup(){
 		var imageURL = "img/sc.jpg";
 		var commName = "United Nations Security Council";
 		var nations = ["China","France","Russian Federation","United Kingdom","United States","Angola","Chad","Chile","Jordan","Lithuania"];
+		document.getElementById("commTopic").innerHTML = "Conflict in Syria";
 	} else if (commCounter == 2){
 		var imageURL = "img/unhcr.png";
-		var commName = "United Nations High Commision for Refugees";
+		var commName = "UN High Commision for Refugees";
 		var nations = ["Portugal","United States","Netherlands","Japan","Norway","Switzerland","Denmark","Iran"];
+		document.getElementById("commTopic").innerHTML = "Migrants into Europe";
 	} else if (commCounter == 3){
 		var imageURL = "img/who.jpg";
 		var commName = "World Health Organization";
 		var nations = ["China","France","Russian Federation","United Kingdom","United States","Angola","Chad","Chile","Jordan","Lithuania"];
+		document.getElementById("commTopic").innerHTML = "Diseases";
 	} else {
 		var imageURL = "img/maze.jpg";
 		commCounter = 0;
-		var commName = "Stuck in The Maze";
+		var commName = "<br>Stuck in The Maze";
 		var nations = ["Thomas","Newt","Minho","Gally","Chuck","Alby","Teresa","Ben","Frypan","Zart"];
+		document.getElementById("commTopic").innerHTML = "Crisis Committee<br>";
 	}
 	for (var i = 0; i<nations.length;i++){
 		document.getElementById("test"+(i+1)).innerHTML = nations[i];
@@ -36,6 +40,16 @@ function changeCaucus(){
 		caucusCount = 0;
 	}
 
+}
+var syria = true;
+function changeTopic(){
+	if(commCounter == 1 && syria ==true){
+		document.getElementById("commTopic").innerHTML = "Latin Drug Trade";
+		syria = false;
+	} else if (commCounter == 1 && syria ==false){
+		document.getElementById("commTopic").innerHTML = "Conflict in Syria";
+		syria = true;
+	}
 }
 
 var speakingTime = 30;
