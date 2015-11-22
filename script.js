@@ -156,15 +156,14 @@ function pad(num, size) {
 var full = false;
 
 function fullscreen(){
-	
 		var i = document.body;
-
+		var element = document.getElementById("textbox");
 		// go full-screen
 		if(!full){
 			if (i.requestFullscreen) {
 				i.requestFullscreen();
 			} else if (i.webkitRequestFullscreen) {
-				i.webkitRequestFullscreen();
+				i.webkitRequestFullScreen();
 			} else if (i.mozRequestFullScreen) {
 				i.mozRequestFullScreen();
 			} else if (i.msRequestFullscreen) {
@@ -184,6 +183,7 @@ function fullscreen(){
 			}
 			full = false;	
 		}
+		document.body.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
 }
 
 function formatTime(time) {

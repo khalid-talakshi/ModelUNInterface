@@ -84,7 +84,7 @@
 	</div>
 
 	<img onClick="fullscreen()" id="fullscreen" src="img/fullscreen.png"/>
-	<div id="resolutions" class="block"><p class="title">Resolution</p><hr><textarea id="textbox" rows="4" cols="50">Type resolutions here</textarea></div><div>
+	<div id="resolutions" class="block"><p class="title">Resolution</p><hr><textarea id="textbox" rows="4" cols="50" onClick="this.setSelectionRange(0, this.value.length)">Paste resolutions here.</textarea></div><div>
 	<div id="timer" class="block">
 		<div id="timerholder"><span id="time"></span></div>
 		<input type="button" id="startbutton" class="clickbutton" value="Start" onclick="start();">
