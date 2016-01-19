@@ -14,7 +14,8 @@ function setup(){
 		"France","China","Egypt","Senegal","Ukraine","Japan","Uruguay","Jordan",
 		"Syrian Government","Syrian Rebels","Venezuela","Iraq","Spain",
 		"New Zealand","Israel","Turkey","Lebanon","Honduras","Peru","Bolivia",
-		"Columbia","Peru","Mexico","Panema"];		document.getElementById("commTopic").innerHTML = "Conflict in Syria";
+		"Columbia","Peru","Mexico","Panema"];		
+		document.getElementById("commTopic").innerHTML = "Conflict in Syria";
 	} else if (commCounter == 2){
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
@@ -48,6 +49,7 @@ function setup(){
 		var nations = ["Thomas","Newt","Minho","Gally","Chuck","Alby","Teresa","Ben","Frypan","Zart"];
 		document.getElementById("commTopic").innerHTML = "Crisis Committee<br>";
 	}
+	
 	for (var i = 0; i<nations.length;i++){
 		document.getElementById("test"+(i+1)).innerHTML = nations[i];
 	}
