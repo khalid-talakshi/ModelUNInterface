@@ -10,8 +10,11 @@ function setup(){
 		}
 		var imageURL = "img/sc.jpg";
 		var commName = "United Nations Security Council";
-		var nations = ["China","France","Russian Federation","United Kingdom","United States","Angola","Chad","Chile","Jordan","Lithuania"];
-		document.getElementById("commTopic").innerHTML = "Conflict in Syria";
+		var nations = ["United States of America","United Kingdom","Russia",
+		"France","China","Egypt","Senegal","Ukraine","Japan","Uruguay","Jordan",
+		"Syrian Government","Syrian Rebels","Venezuela","Iraq","Spain",
+		"New Zealand","Israel","Turkey","Lebanon","Honduras","Peru","Bolivia",
+		"Columbia","Peru","Mexico","Panema"];		document.getElementById("commTopic").innerHTML = "Conflict in Syria";
 	} else if (commCounter == 2){
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
@@ -19,8 +22,10 @@ function setup(){
 		}
 		var imageURL = "img/unhcr.png";
 		var commName = "UN High Commision for Refugees";
-		var nations = ["Portugal","United States","Netherlands","Japan","Norway","Switzerland","Denmark","Iran"];
-		document.getElementById("commTopic").innerHTML = "Migrants in Europe";
+		var nations = ["Armenia","Hungary","Syria","United States of America",
+		"Serbia","Canada","Iraq","France","Germany","Greece","Slovenia","Croatia",
+		"Norway","Sweden","Denmark","Italy","Belgium","Russia","Lebanon","Turkey",
+		"Saudi Arabia"];		document.getElementById("commTopic").innerHTML = "Migrants in Europe";
 	} else if (commCounter == 3){
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
@@ -28,7 +33,8 @@ function setup(){
 		}
 		var imageURL = "img/who.jpg";
 		var commName = "World Health Organization";
-		var nations = ["China","France","Russian Federation","United Kingdom","United States","Angola","Chad","Chile","Jordan","Lithuania"];
+		var nations = ["India","China","Pakistan","Afganistan","Switzerland","United Kingdom",
+		"United States of America","Russia","Canada","Brazil","Singapore","Peru","Nigeria","Israel"];
 		document.getElementById("commTopic").innerHTML = "Diseases";
 	} else {
 		var imageURL = "img/maze.jpg";
