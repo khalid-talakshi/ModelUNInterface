@@ -1,8 +1,11 @@
 
 var commCounter = 0;
+var topicIndex = 0;
 
 function setup(){
 	commCounter++;
+	topicIndex = 0;
+	changeTopic();
 	if (commCounter == 1) {
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
@@ -14,40 +17,62 @@ function setup(){
 		"France","China","Egypt","Senegal","Ukraine","Japan","Uruguay","Jordan",
 		"Syrian Government","Syrian Rebels","Venezuela","Iraq","Spain",
 		"New Zealand","Israel","Turkey","Lebanon","Honduras","Peru","Bolivia",
-		"Columbia","Peru","Mexico","Panema"];		
-		document.getElementById("commTopic").innerHTML = "Conflict in Syria";
+		"Columbia","Peru","Mexico","Panema"];	
+
+		
 	} else if (commCounter == 2){
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
     		myElements[i].style.top = "4.2%";
 		}
-		var imageURL = "img/unhcr.png";
-		var commName = "UN High Commision for Refugees";
+		var imageURL = "img/eu.png";
+		var commName = "European Union";
 		var nations = ["Armenia","Hungary","Syria","United States of America",
 		"Serbia","Canada","Iraq","France","Germany","Greece","Slovenia","Croatia",
 		"Norway","Sweden","Denmark","Italy","Belgium","Russia","Lebanon","Turkey",
-		"Saudi Arabia"];		document.getElementById("commTopic").innerHTML = "Migrants in Europe";
+		"Saudi Arabia"];	
 	} else if (commCounter == 3){
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
     		myElements[i].style.top = "4.2%";
 		}
-		var imageURL = "img/who.jpg";
-		var commName = "World Health Organization";
+		var imageURL = "img/2050.png";
+		var commName = "A.D. 2050";
 		var nations = ["India","China","Pakistan","Afganistan","Switzerland","United Kingdom",
 		"United States of America","Russia","Canada","Brazil","Singapore","Peru","Nigeria","Israel"];
-		document.getElementById("commTopic").innerHTML = "Diseases";
-	} else {
-		var imageURL = "img/maze.jpg";
+	
+	}else if (commCounter == 4){
+		var myElements = document.querySelectorAll(".topic");
+		for (var i = 0; i < myElements.length; i++) {
+    		myElements[i].style.top = "4.2%";
+		}
+		var imageURL = "img/crisis.png";
+		var commName = "Crisis Committee";
+		var nations = ["India","China","Pakistan","Afganistan","Switzerland","United Kingdom",
+		"United States of America","Russia","Canada","Brazil","Singapore","Peru","Nigeria","Israel"];
+
+	}else if (commCounter == 5){
+		var myElements = document.querySelectorAll(".topic");
+		for (var i = 0; i < myElements.length; i++) {
+    		myElements[i].style.top = "4.2%";
+		}
+		var imageURL = "img/unep.png";
+		var commName = "UNEP";
+		var nations = ["India","China","Pakistan","Afganistan","Switzerland","United Kingdom",
+		"United States of America","Russia","Canada","Brazil","Singapore","Peru","Nigeria","Israel"];
+
+	}
+	 else {
+		var imageURL = "img/mars.png";
 		commCounter = 0;
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
     		myElements[i].style.top = "6%";
 		}
 
-		var commName = "Stuck in The Maze";
+		var commName = "Moving to Mars";
 		var nations = ["Thomas","Newt","Minho","Gally","Chuck","Alby","Teresa","Ben","Frypan","Zart"];
-		document.getElementById("commTopic").innerHTML = "Crisis Committee<br>";
+
 	}
 	
 	for (var i = 0; i<nations.length;i++){
@@ -67,15 +92,23 @@ function changeCaucus(){
 	}
 
 }
-var syria = true;
+
 function changeTopic(){
-	if(commCounter == 1 && syria ==true){
-		document.getElementById("commTopic").innerHTML = "Latin Drug Trade";
-		syria = false;
-	} else if (commCounter == 1 && syria ==false){
-		document.getElementById("commTopic").innerHTML = "Conflict in Syria";
-		syria = true;
+
+	var topics = [["Disputed Territories","Containing ISIS"],
+	["Migrants in Europe","Terrorism"],
+	["Rising Sea Levels","Artificial Intelligence"],
+	["New Island Nation","Oil in Antarctica"],
+	["Ocean Plastics"],["Colonizing Mars"]];
+
+	if(topicIndex > topics[commCounter-1].length-1){
+
+		topicIndex = 0;
 	}
+	document.getElementById("commTopic").innerHTML = topics[commCounter-1][topicIndex];
+	topicIndex++;
+	
+
 }
 
 var speakingTime = 30;
