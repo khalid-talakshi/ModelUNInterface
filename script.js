@@ -13,11 +13,7 @@ function setup(){
 		}
 		var imageURL = "img/sc.jpg";
 		var commName = "United Nations Security Council";
-		var nations = ["United States of America","United Kingdom","Russia",
-		"France","China","Egypt","Senegal","Ukraine","Japan","Uruguay","Jordan",
-		"Syrian Government","Syrian Rebels","Venezuela","Iraq","Spain",
-		"New Zealand","Israel","Turkey","Lebanon","Honduras","Peru","Bolivia",
-		"Columbia","Peru","Mexico","Panema"];	
+		var nations = ["China","Ethiopia","South Korea","Italy","Japan","Ukraine","Bolivia","Philippines","Papua New Guinea","Sweden","India","Malaysia","UK","USA","Brunei","France","Egypt","Uruguay","Nepal","Indonesia","Kazakhstan","Vietnam","Tibet (Representative)","Russia","Bhutan","Senegal","Taiwan (Representative)","North Korea","France","Bolivia","Italy","Malaysia","Iraq","Japan","Turkey","Ukraine","Sweden","Egypt","Vietnam","UK","Kazakhstan","China ","Russia","Senegal","Uruguay","Philippines","Brunei","Ethiopia","Syria","India","USA","Mongolia","Iran"];	
 
 		
 	} else if (commCounter == 2){
@@ -27,10 +23,7 @@ function setup(){
 		}
 		var imageURL = "img/eu.png";
 		var commName = "European Union";
-		var nations = ["Armenia","Hungary","Syria","United States of America",
-		"Serbia","Canada","Iraq","France","Germany","Greece","Slovenia","Croatia",
-		"Norway","Sweden","Denmark","Italy","Belgium","Russia","Lebanon","Turkey",
-		"Saudi Arabia"];	
+		var nations = ["Finland","Denmark","Greece","Italy","France","Austria","Hungary","Sweden","UK","Vatican City (observer state)","Switzerland","Netherlands","Germany","Czech Republic","Belgium","Russia","Poland","Bulgaria","Portugal","Romania","Malta","Cyprus","Turkey (Observer state)","Croatia","Syria (Observer State)","Ireland","USA (Observer State)","Afghanistan","Iraq (Observer State)","Latvia","Canada (observer state)"];	
 	} else if (commCounter == 3){
 		var myElements = document.querySelectorAll(".topic");
 		for (var i = 0; i < myElements.length; i++) {
@@ -38,8 +31,7 @@ function setup(){
 		}
 		var imageURL = "img/2050.png";
 		var commName = "A.D. 2050";
-		var nations = ["India","China","Pakistan","Afganistan","Switzerland","United Kingdom",
-		"United States of America","Russia","Canada","Brazil","Singapore","Peru","Nigeria","Israel"];
+		var nations = ["USA","Canada ","China ","Vietnam ","Japan ","Maldives ","United Kingdom ","Germany ","France ","Micronesia","Indonesia ","Thailand ","Philippines ","Brazil ","Kiribati (Island Nation)","Netherlands ","Taiwan","Malaysia ","India  ","Ireland"];
 	
 	}else if (commCounter == 4){
 		var myElements = document.querySelectorAll(".topic");
@@ -48,8 +40,7 @@ function setup(){
 		}
 		var imageURL = "img/crisis.png";
 		var commName = "Crisis Committee";
-		var nations = ["India","China","Pakistan","Afganistan","Switzerland","United Kingdom",
-		"United States of America","Russia","Canada","Brazil","Singapore","Peru","Nigeria","Israel"];
+		var nations = ["China","Chile","New Zealand","Russia","Japan","USA","Saudi Arabia","UK","Norway","France","Australia","Micronesia","France"];
 
 	}else if (commCounter == 5){
 		var myElements = document.querySelectorAll(".topic");
@@ -58,8 +49,7 @@ function setup(){
 		}
 		var imageURL = "img/unep.png";
 		var commName = "UNEP";
-		var nations = ["India","China","Pakistan","Afganistan","Switzerland","United Kingdom",
-		"United States of America","Russia","Canada","Brazil","Singapore","Peru","Nigeria","Israel"];
+		var nations = ["China ","Indonesia ","The Philippines ","Thailand ","Vietnam ","Sir Lanka ","Egypt ","Malaysia ","Kiribati","Bangladesh ","South Africa ","India ","France","Turkey ","Pakistan ","Brazil ","China","Morocco ","Samoa","U.S.A","Canada ","Vanuatu","Norway","Malaysia","Russia ","Japan ","Micronesia"];
 
 	}
 	 else {
@@ -71,10 +61,10 @@ function setup(){
 		}
 
 		var commName = "Moving to Mars";
-		var nations = ["Thomas","Newt","Minho","Gally","Chuck","Alby","Teresa","Ben","Frypan","Zart"];
+		var nations = ["James Mang","Isaiah Williams","Mateo Huegel","Natalka Bowley","Batool Jafri","Subaydah Aden","Bahara Khalilullah","Emily Standish","Eric Peng","Gabriel Deza","Tory Dockree","Deeksha Polamreddy","Josh Poon","Yazan Jarrad","Veniamin Veselovsky"];
 
 	}
-	
+	nations.sort();
 	for (var i = 0; i<nations.length;i++){
 		document.getElementById("test"+(i+1)).innerHTML = nations[i];
 	}
