@@ -13,7 +13,7 @@ function setup(){
 		}
 		var imageURL = "img/sc.jpg";
 		var commName = "United Nations Security Council";
-		var nations = ["China","Ethiopia","South Korea","Italy","Japan","Ukraine","Bolivia","Philippines","Papua New Guinea","Sweden","India","Malaysia","UK","USA","Brunei","France","Egypt","Uruguay","Nepal","Indonesia","Kazakhstan","Vietnam","Tibet (Representative)","Russia","Bhutan","Senegal","Taiwan (Representative)","North Korea","France","Bolivia","Italy","Malaysia","Iraq","Japan","Turkey","Ukraine","Sweden","Egypt","Vietnam","UK","Kazakhstan","China ","Russia","Senegal","Uruguay","Philippines","Brunei","Ethiopia","Syria","India","USA","Mongolia","Iran"];	
+		var nations = ["China","Ethiopia","South Korea","Italy","Japan","Ukraine","Bolivia","Philippines","Papua New Guinea","Sweden","India","Malaysia","UK","USA","Brunei","Egypt","Uruguay","Nepal","Indonesia","Kazakhstan","Vietnam","Tibet (Representative)","Russia","Bhutan","Senegal","Taiwan (Representative)","North Korea","France","Bolivia","Italy","Malaysia","Iraq","Japan","Turkey","Ukraine","Sweden","Egypt","Vietnam","UK","Kazakhstan","China ","Russia","Senegal","Uruguay","Philippines","Brunei","Ethiopia","Syria","India","USA","Mongolia","Iran"];	
 
 		
 	} else if (commCounter == 2){
@@ -40,7 +40,7 @@ function setup(){
 		}
 		var imageURL = "img/crisis.png";
 		var commName = "Crisis Committee";
-		var nations = ["China","Chile","New Zealand","Russia","Japan","USA","Saudi Arabia","UK","Norway","France","Australia","Micronesia","France"];
+		var nations = ["China","Chile","New Zealand","Russia","Japan","USA","Saudi Arabia","UK","Norway","France","Australia","Micronesia","France","OPEC","Marine Biologist","South Africa"];
 
 	}else if (commCounter == 5){
 		var myElements = document.querySelectorAll(".topic");
@@ -61,7 +61,7 @@ function setup(){
 		}
 
 		var commName = "Moving to Mars";
-		var nations = ["James Mang","Isaiah Williams","Mateo Huegel","Natalka Bowley","Batool Jafri","Subaydah Aden","Bahara Khalilullah","Emily Standish","Eric Peng","Gabriel Deza","Tory Dockree","Deeksha Polamreddy","Josh Poon","Yazan Jarrad","Veniamin Veselovsky"];
+		var nations = ["James Mang","Isaiah Williams","Mateo Huegel","Natalka Bowley","Batool Jafri","Subaydah Aden","Bahara Khalilullah","Emily Standish","Eric Peng","Gabriel Deza","Tory Dockree","Deeksha Polamreddy","Josh Poon","Yazan Jarrad","Veniamin Veselovsky","Volodymyr Gryga","Anton Zubko"];
 
 	}
 	nations.sort();
